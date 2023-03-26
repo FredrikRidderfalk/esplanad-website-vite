@@ -12,10 +12,9 @@ function Home() {
             </h1>
             <span className="subtitle">Förvaltning</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              quaerat placeat voluptatum atque voluptates quibusdam esse aut
-              possimus cumque, at non quia ea omnis nostrum iure facilis, rem
-              ipsa odio.
+              Din tjänsteleverantör inom teknisk förvaltning och
+              fastighetsskötsel för din bostadsrättsförening, hyresfastighet,
+              eller industrilokal.
             </p>
             <div className="container__hero-btns">
               <a className="hero-btn" href="">
