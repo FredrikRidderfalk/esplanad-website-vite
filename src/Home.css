@@ -1,25 +1,135 @@
-.home {
-  border: 1px solid magenta;
+section {
+  padding-inline: 2rem;
 }
+
+/* Hero section */
 .hero {
   height: 100vh;
-  padding-top: 30%;
-  padding-inline: 2rem;
+  padding-top: 25%;
   background-image: url(./assets/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hero-content {
-  max-width: 80%;
+  width: 100%;
+  border: 1px solid magenta;
+}
+.container__hero-content {
+  margin: 0 auto;
+  max-width: 1300px;
+  border: 1px solid purple;
+}
+.hero-content h1 span {
+  color: #10acf4;
 }
 .hero-btn {
-  border: 2px solid blue;
-  border-radius: 6px;
-  padding: 0.25rem 0.5rem;
+  border-radius: 40px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+}
+.hero-btn:first-child {
+  background-color: #10acf4;
+  border: 2px solid #10acf4;
+  color: #fff;
+}
+.hero-btn:last-child {
+  background-color: #fff;
+  border: 2px solid #10acf4;
+  color: #333;
+}
+.container__hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container__cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.stats-card {
+  margin-top: 0.5rem;
+}
+.stats-card:not(:last-child),
+.hero-btn:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.stats-card b {
+  font-size: 1.5rem;
+}
+.stats-card p {
+  margin: 0;
 }
 
+/* Services section */
+.services {
+  padding-block: 2rem;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  text-align: start;
+}
+.service-img {
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.service-img-1 {
+  background-image: url(./assets/screwdriver.png);
+}
+.service-img-2 {
+  background-image: url(./assets/gardening.png);
+}
+.service-img-3 {
+  background-image: url(./assets/tools.png);
+}
+
+/* Media queries */
 @media screen and (min-width: 600px) {
   .hero-content {
     max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container__cards {
+    flex-direction: row;
+  }
+  .stats-card {
+    text-align: center;
+  }
+  .stats-card b {
+    font-size: 2rem;
+  }
+  .stats-card:not(:last-child),
+  .hero-btn:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  /* Services */
+  .service {
+    flex-direction: row;
+  }
+  .service:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: start;
+  }
+  .service:nth-child(even) {
+    text-align: end;
+  }
+  .service-text {
+    padding-inline: 2rem;
+  }
+  .service-description,
+  .service-img {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
