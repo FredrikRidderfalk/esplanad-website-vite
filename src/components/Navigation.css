@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightskyblue;
+  padding: 0.5rem 2rem;
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
+  width: 100%;
+}
+.container__links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.link:not(:last-child) {
+  margin-right: 0.5rem;
+  border: 1px solid blueviolet;
+}

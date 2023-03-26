@@ -1,0 +1,25 @@
+.home {
+  border: 1px solid magenta;
+}
+.hero {
+  height: 100vh;
+  padding-top: 30%;
+  padding-inline: 2rem;
+  background-image: url(./assets/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content {
+  max-width: 80%;
+}
+.hero-btn {
+  border: 2px solid blue;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .hero-content {
+    max-width: 50%;
+  }
+}
