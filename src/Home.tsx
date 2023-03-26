@@ -4,7 +4,7 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home">
-      <div className="hero">
+      <section className="hero">
         <div className="hero-content">
           <h1>Esplanad Förvaltning</h1>
           <p>
@@ -14,14 +14,43 @@ function Home() {
             odio.
           </p>
           <a className="hero-btn" href="">
-            Button 1
+            Be om offert
           </a>
           <a className="hero-btn" href="">
-            Button 2
+            Kontakta oss
           </a>
         </div>
-        {/* <img className="hero-img" src={logo} alt="A tall building." /> */}
-      </div>
+      </section>
+
+      <section className="services">
+        <div className="service-1">
+          <div className="service-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+            aliquam molestiae accusantium reprehenderit voluptates blanditiis
+            suscipit sed quod facilis, atque repudiandae iste eaque illo, rerum
+            omnis, maxime distinctio sit. Accusamus.
+          </div>
+          <div className="service-img"></div>
+        </div>
+        <div className="service-2">
+          <div className="service-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            autem est id fugiat enim laudantium cum? Eos repudiandae numquam
+            saepe possimus excepturi, nam iure sequi expedita totam perspiciatis
+            quo nesciunt.
+          </div>
+          <div className="service-img"></div>
+        </div>
+        <div className="service-3">
+          <div className="service-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non,
+            quaerat repellat rerum error eos consequuntur autem tempore nulla?
+            Adipisci labore tenetur blanditiis natus cupiditate maxime eius
+            magni nulla nisi.
+          </div>
+          <div className="service-img"></div>
+        </div>
+      </section>
     </div>
   );
 }
