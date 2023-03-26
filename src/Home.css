@@ -1,5 +1,5 @@
 section {
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 
 /* Hero section */
@@ -91,6 +91,9 @@ section {
 
 /* Media queries */
 @media screen and (min-width: 600px) {
+  section {
+    padding-inline: 2rem;
+  }
   .hero-content {
     max-width: 50%;
   }
