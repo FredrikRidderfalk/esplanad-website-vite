@@ -8,8 +8,9 @@ function Home() {
         <div className="container__hero-content">
           <div className="hero-content">
             <h1>
-              Espl<span>a</span>n<span>a</span>d Förvaltning
+              Espl<span>a</span>n<span>a</span>d
             </h1>
+            <span className="subtitle">Förvaltning</span>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
               quaerat placeat voluptatum atque voluptates quibusdam esse aut

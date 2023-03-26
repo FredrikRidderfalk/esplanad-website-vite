@@ -22,6 +22,10 @@ section {
 .hero-content h1 span {
   color: #10acf4;
 }
+.subtitle {
+  font-size: 3rem;
+  color: #555;
+}
 .hero-btn {
   border-radius: 40px;
   padding: 0.5rem 1.5rem;
@@ -100,6 +104,9 @@ section {
 }
 
 @media screen and (min-width: 800px) {
+  .subtitle {
+    font-size: 4rem;
+  }
   .container__cards {
     flex-direction: row;
   }
