@@ -92,6 +92,30 @@ function Home() {
           <div className="service-img service-img-3"></div>
         </div>
       </section>
+
+      <section className="contact-form">
+        <form action="submit">
+          <div className="container__name-email-message">
+            <label htmlFor="name">
+              <span>*</span>Namn
+            </label>
+            <input id="name" type="text" placeholder="E.g. Anders Andersson" />
+            <label htmlFor="email">
+              <span>*</span>Email
+            </label>
+            <input
+              id="email"
+              type="text"
+              placeholder="E.g. andersson@gmail.com"
+            />
+            <label htmlFor="message">
+              <span>*</span>Meddelande
+            </label>
+            <textarea id="message" placeholder="Skriv ditt meddelande här..." />
+            <button type="submit">Skicka</button>
+          </div>
+        </form>
+      </section>
     </div>
   );
 }
