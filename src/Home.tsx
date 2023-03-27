@@ -43,7 +43,7 @@ function Home() {
       </section>
 
       <section className="services">
-        <h2>Våra tjänster</h2>
+        <h2 className="services-title">Våra tjänster</h2>
         <div className="service">
           <div className="service-description">
             <div className="service-text">

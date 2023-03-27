@@ -95,6 +95,17 @@ section {
 .service-img-3 {
   background-image: url(./assets/tools.png);
 }
+/* .services-title {
+  background: rgb(16, 172, 244);
+  background: -webkit-linear-gradient(
+    150deg,
+    rgba(16, 172, 244, 1) 40%,
+    rgb(0, 0, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
 
 /* Media queries */
 @media screen and (min-width: 600px) {
