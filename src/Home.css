@@ -124,13 +124,11 @@ section {
 .contact-form {
   margin-block: 3rem;
 }
-.container__name-email-message input {
-  width: 100%;
-  padding: 0.5rem;
-}
+.container__name-email-message input,
 .container__name-email-message textarea {
   width: 100%;
   padding: 0.5rem;
+  border: 1px solid #e0e0e0;
 }
 .container__name-email-message label {
   margin-top: 0.5rem;
@@ -144,6 +142,15 @@ section {
   color: #fff;
   margin-top: 1.5rem;
   width: 100%;
+}
+.input-error {
+  font-size: 0.75rem;
+  color: #f00;
+  font-style: italic;
+  margin: 0;
+}
+.input-error-placeholder {
+  visibility: hidden;
 }
 
 @media screen and (min-width: 800px) {

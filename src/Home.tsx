@@ -1,7 +1,10 @@
+import React from "react";
 import logo from "./assets/hero.jpg";
 import "./Home.css";
 
 function Home() {
+  const [charCount, setCharCount] = React.useState(0);
+
   return (
     <div className="home">
       <section className="hero">
@@ -97,21 +100,35 @@ function Home() {
         <form action="submit">
           <div className="container__name-email-message">
             <label htmlFor="name">
-              <span>*</span>Namn
+              Namn<span>*</span>
             </label>
-            <input id="name" type="text" placeholder="E.g. Anders Andersson" />
+            <input id="name" type="text" placeholder="T.ex. Anders Andersson" />
             <label htmlFor="email">
-              <span>*</span>Email
+              Email<span>*</span>
             </label>
             <input
               id="email"
               type="text"
-              placeholder="E.g. andersson@gmail.com"
+              placeholder="T.ex. andersson@gmail.com"
             />
             <label htmlFor="message">
-              <span>*</span>Meddelande
+              Meddelande<span>*</span>
             </label>
-            <textarea id="message" placeholder="Skriv ditt meddelande här..." />
+            <textarea
+              id="message"
+              rows={8}
+              onChange={(e) => setCharCount(e.target.value.length)}
+              maxLength={100}
+              placeholder="Skriv ditt meddelande här..."
+            />
+            {charCount < 1000 && (
+              <p className="input-error input-error-placeholder">.</p>
+            )}
+            {charCount >= 1000 && (
+              <p className="input-error">
+                * Max längd på meddelandet är 1000 tecken.
+              </p>
+            )}
             <button type="submit">Skicka</button>
           </div>
         </form>
