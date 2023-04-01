@@ -49,6 +49,11 @@ textarea {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+input,
+textarea {
+  transition: 0.1s ease-in-out;
+}
+
 input:focus-visible,
 textarea:focus-visible {
   outline: none;
