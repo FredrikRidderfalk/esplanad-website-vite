@@ -4,6 +4,25 @@ import "./Home.css";
 function Home() {
   const [charCount, setCharCount] = React.useState(0);
 
+  // const counters = document.querySelectorAll(".count");
+  // const speed = 200;
+
+  // counters.forEach((counter) => {
+  //   const updateCount = () => {
+  //     const target = parseInt(counter.getAttribute("data-target"));
+  //     const count = parseInt(counter.innerText);
+  //     const increment = Math.trunc(target / speed);
+
+  //     if (count < target) {
+  //       counter.innerText = count + increment;
+  //       setTimeout(updateCount, 1);
+  //     } else {
+  //       count.innerText = target;
+  //     }
+  //   };
+  //   updateCount();
+  // });
+
   return (
     <div className="home">
       <section className="hero">
@@ -29,14 +48,26 @@ function Home() {
             <div className="container__cards">
               <div className="stats-card">
                 <b>80+</b>
+                {/* <b data-target="80" className="count">
+                  0
+                </b>
+                <b>+</b> */}
                 <p>förvaltade hus</p>
               </div>
               <div className="stats-card">
                 <b>4500+</b>
+                {/* <b data-target="4500" className="count">
+                  0
+                </b>
+                <b>+</b> */}
                 <p>hyresgäster</p>
               </div>
               <div className="stats-card">
                 <b>30 000+</b>
+                {/* <b data-target="30000" className="count">
+                  0
+                </b>
+                <b>+</b> */}
                 <p>nöjda kunder</p>
               </div>
             </div>
