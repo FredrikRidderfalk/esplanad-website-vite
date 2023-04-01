@@ -135,6 +135,9 @@ section {
   max-width: 28px;
   margin: 0 auto 0.5rem;
 }
+.email-link:hover {
+  text-decoration: underline !important;
+}
 .contact-item {
   display: flex;
   flex-direction: column;

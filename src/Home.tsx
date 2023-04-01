@@ -160,7 +160,9 @@ function Home() {
             <img className="icon" src="src/assets/email-icon.png" alt="" />
             <div className="contact-item__info">
               <b>E-post:</b>
-              <a href="roger@esplanad.nu">info@esplanad.nu</a>
+              <a className="email-link" href="roger@esplanad.nu">
+                info@esplanad.nu
+              </a>
             </div>
           </div>
         </div>
