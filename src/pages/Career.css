@@ -1,0 +1,32 @@
+/* Career section */
+.career {
+  min-height: calc(100vh - 137px);
+  padding: 60px 1rem 4rem;
+}
+.career-content {
+  width: 100%;
+}
+.career-content img {
+  display: block;
+  width: 100%;
+}
+.career-content p {
+  margin-block: 0.5rem;
+}
+.career-content h2 {
+  text-align: center;
+}
+.career-content h3 {
+  margin-bottom: 0.5rem;
+}
+.container__career-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+  .career {
+    padding-inline: 2rem;
+  }
+}

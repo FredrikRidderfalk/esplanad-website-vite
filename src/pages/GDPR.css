@@ -1,0 +1,32 @@
+/* GDPR section */
+.gdpr {
+  min-height: calc(100vh - 137px);
+  padding: 60px 1rem 4rem;
+}
+.gdpr-content {
+  width: 100%;
+}
+.gdpr-content img {
+  display: block;
+  width: 100%;
+}
+.gdpr-content p {
+  margin-block: 0.5rem;
+}
+.gdpr-content h2 {
+  text-align: center;
+}
+.gdpr-content h3 {
+  margin-bottom: 0.5rem;
+}
+.container__gdpr-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+  .gdpr {
+    padding-inline: 2rem;
+  }
+}

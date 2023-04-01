@@ -1,6 +1,6 @@
 /* Offer section */
 .offer {
-  height: calc(100vh - 137px);
+  min-height: calc(100vh - 137px);
   padding-top: 60px;
   padding-inline: 1rem;
 }

@@ -1,0 +1,28 @@
+/* Cookies section */
+.cookies {
+  min-height: calc(100vh - 137px);
+  padding: 60px 1rem 4rem;
+}
+.cookies-content {
+  width: 100%;
+}
+.cookies-content p {
+  margin-block: 0.5rem;
+}
+.cookies-content h2 {
+  text-align: center;
+}
+.cookies-content h3 {
+  margin-bottom: 0.5rem;
+}
+.container__cookies-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+  .cookies {
+    padding-inline: 2rem;
+  }
+}
