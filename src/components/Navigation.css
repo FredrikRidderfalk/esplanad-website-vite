@@ -1,10 +1,7 @@
 .navbar {
   background-color: #fff;
   padding: 0.5rem 1rem;
-  position: -webkit-sticky; /* Safari */
-  position: fixed;
   width: 100%;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 .container__navbar-content {
   display: flex;
@@ -19,7 +16,7 @@
 }
 .link {
   color: #333;
-  font-size: 1.25rem;
+  font-size: 1rem;
   position: relative;
 }
 .link:not(:last-child) {
@@ -42,5 +39,8 @@
 @media screen and (min-width: 600px) {
   .navbar {
     padding-inline: 2rem;
+  }
+  .link {
+    font-size: 1.25rem;
   }
 }

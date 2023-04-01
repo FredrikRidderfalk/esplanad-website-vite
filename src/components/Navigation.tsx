@@ -6,16 +6,18 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="container__navbar-content">
         <div className="logo">
-          <img src={viteLogo} alt="" />
+          <a href="/">
+            <img src={viteLogo} alt="" />
+          </a>
         </div>
         <div className="container__links">
-          <a className="link" href="">
+          <a className="link" href="/">
             Hem
           </a>
-          <a className="link" href="">
+          <a className="link" href="/gdpr">
             Offert
           </a>
-          <a className="link" href="">
+          <a className="link" href="/gdpr">
             Felanmälan
           </a>
         </div>
