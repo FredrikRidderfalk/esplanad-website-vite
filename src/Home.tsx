@@ -97,38 +97,52 @@ function Home() {
       </section>
 
       <section className="contact-form">
+        <h2>Kontakta oss</h2>
+
         <form action="submit">
-          <div className="container__name-email-message">
-            <label htmlFor="name">
-              Namn<span>*</span>
-            </label>
-            <input id="name" type="text" placeholder="T.ex. Anders Andersson" />
-            <label htmlFor="email">
-              Email<span>*</span>
-            </label>
-            <input
-              id="email"
-              type="text"
-              placeholder="T.ex. andersson@gmail.com"
-            />
-            <label htmlFor="message">
-              Meddelande<span>*</span>
-            </label>
-            <textarea
-              id="message"
-              rows={8}
-              onChange={(e) => setCharCount(e.target.value.length)}
-              maxLength={100}
-              placeholder="Skriv ditt meddelande här..."
-            />
-            {charCount < 1000 && (
-              <p className="input-error input-error-placeholder">.</p>
-            )}
-            {charCount >= 1000 && (
-              <p className="input-error">
-                * Max längd på meddelandet är 1000 tecken.
-              </p>
-            )}
+          <div className="container__contact">
+            <div>
+              <label htmlFor="name">
+                Namn<span>*</span>
+              </label>
+              <input
+                id="name"
+                type="text"
+                placeholder="E.g. Anders Andersson"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email">
+                Email<span>*</span>
+              </label>
+              <input
+                id="email"
+                type="text"
+                placeholder="E.g. andersson@gmail.com"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="message">
+                Meddelande<span>*</span>
+              </label>
+              <textarea
+                id="message"
+                rows={8}
+                onChange={(e) => setCharCount(e.target.value.length)}
+                maxLength={100}
+                placeholder="Skriv ditt meddelande här..."
+              />
+              {charCount < 1000 && (
+                <p className="input-error input-error-placeholder">.</p>
+              )}
+              {charCount >= 1000 && (
+                <p className="input-error">
+                  * Max längd på meddelandet är 1000 tecken.
+                </p>
+              )}
+            </div>
             <button type="submit">Skicka</button>
           </div>
         </form>

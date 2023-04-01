@@ -107,6 +107,52 @@ section {
   -webkit-text-fill-color: transparent;
 } */
 
+/* Contact */
+.contact-form {
+  margin-block: 3rem;
+  text-align: center;
+}
+.container__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  text-align: start;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.container__contact div {
+  min-width: 200px;
+  flex-grow: 1;
+}
+.container__contact input,
+.container__contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+.container__contact label {
+  margin-top: 0.5rem;
+}
+.container__contact span {
+  color: #f00;
+  margin-right: 0.125rem;
+}
+.container__contact button {
+  background-color: #10acf4;
+  color: #fff;
+  width: 100%;
+}
+.input-error {
+  font-size: 0.75rem;
+  color: #f00;
+  font-style: italic;
+  margin: 0;
+}
+.input-error-placeholder {
+  visibility: hidden;
+}
+
 /* Media queries */
 @media screen and (min-width: 600px) {
   section {
@@ -118,39 +164,6 @@ section {
   .hero-content {
     max-width: 50%;
   }
-}
-
-/* Contact */
-.contact-form {
-  margin-block: 3rem;
-}
-.container__name-email-message input,
-.container__name-email-message textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #e0e0e0;
-}
-.container__name-email-message label {
-  margin-top: 0.5rem;
-}
-.container__name-email-message span {
-  color: #f00;
-  margin-right: 0.125rem;
-}
-.container__name-email-message button {
-  background-color: #10acf4;
-  color: #fff;
-  margin-top: 1.5rem;
-  width: 100%;
-}
-.input-error {
-  font-size: 0.75rem;
-  color: #f00;
-  font-style: italic;
-  margin: 0;
-}
-.input-error-placeholder {
-  visibility: hidden;
 }
 
 @media screen and (min-width: 800px) {
@@ -195,17 +208,4 @@ section {
     flex-direction: column;
     justify-content: center;
   }
-
-  /* Contact */
-  .container__name-email-message {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  /* .container__name-email-message input {
-    max-width: 500px;
-  } */
 }
