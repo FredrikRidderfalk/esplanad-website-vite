@@ -130,6 +130,7 @@ section {
   padding: 0.5rem;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
+  max-width: 600px;
 }
 .container__contact label {
   margin-top: 0.5rem;
@@ -148,6 +149,7 @@ section {
   color: #f00;
   font-style: italic;
   margin: 0;
+  margin-top: -0.25rem;
 }
 .input-error-placeholder {
   visibility: hidden;

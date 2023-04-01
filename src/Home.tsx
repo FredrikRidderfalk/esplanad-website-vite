@@ -131,7 +131,7 @@ function Home() {
                 id="message"
                 rows={8}
                 onChange={(e) => setCharCount(e.target.value.length)}
-                maxLength={100}
+                maxLength={1000}
                 placeholder="Skriv ditt meddelande här..."
               />
               {charCount < 1000 && (
