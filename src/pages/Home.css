@@ -5,7 +5,7 @@ section {
 .hero {
   height: 100vh;
   padding-top: 20%;
-  background-image: url(./assets/hero.jpg);
+  background-image: url(../assets/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -95,13 +95,13 @@ section {
   background-position: center;
 }
 .service-img-1 {
-  background-image: url(./assets/screwdriver.png);
+  background-image: url(../assets/screwdriver.png);
 }
 .service-img-2 {
-  background-image: url(./assets/gardening.png);
+  background-image: url(../assets/gardening.png);
 }
 .service-img-3 {
-  background-image: url(./assets/tools.png);
+  background-image: url(../assets/tools.png);
 }
 
 /* Contact */

@@ -13,7 +13,7 @@ function Footer() {
           </div>
         </div>
         <div className="container__footer-links">
-          <a href="" className="footer-link">
+          <a href="/gdpr" className="footer-link">
             GDPR
           </a>
           <a href="" className="footer-link">
