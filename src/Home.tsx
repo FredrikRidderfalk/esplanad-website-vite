@@ -100,7 +100,6 @@ function Home() {
         <h2>
           Kontakta <span>Oss</span>
         </h2>
-
         <form action="submit">
           <div className="container__contact">
             <div>
@@ -116,7 +115,7 @@ function Home() {
 
             <div>
               <label htmlFor="email">
-                Email<span>*</span>
+                E-post<span>*</span>
               </label>
               <input
                 id="email"
@@ -148,6 +147,23 @@ function Home() {
             <button type="submit">Skicka</button>
           </div>
         </form>
+
+        <div className="container__contact-info">
+          <div className="contact-item">
+            <img className="icon" src="src/assets/phone-icon.png" alt="" />
+            <div className="contact-item__info">
+              <b>Telefon:</b>
+              <p>031-7882800</p>
+            </div>
+          </div>
+          <div className="contact-item">
+            <img className="icon" src="src/assets/email-icon.png" alt="" />
+            <div className="contact-item__info">
+              <b>E-post:</b>
+              <a href="roger@esplanad.nu">info@esplanad.nu</a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

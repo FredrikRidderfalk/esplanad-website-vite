@@ -120,6 +120,34 @@ section {
   max-width: 600px;
   margin: 0 auto;
 }
+.container__contact-info {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.container__contact-info b,
+.container__contact-info p {
+  margin: 0;
+  display: block;
+}
+.icon {
+  max-width: 28px;
+  margin: 0 auto 0.5rem;
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-item__info a {
+  color: #10acf4;
+}
 .container__contact div {
   min-width: 200px;
   flex-grow: 1;
@@ -165,6 +193,22 @@ section {
   }
   .hero-content {
     max-width: 50%;
+  }
+  .container__contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contact-item {
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-item__info {
+    margin-left: 1rem;
+    align-items: flex-start;
+  }
+  .icon {
+    margin: 0;
   }
 }
 
