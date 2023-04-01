@@ -1,8 +1,17 @@
 import React from "react";
+import { useRef, useEffect } from "react";
 import "./Home.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
   const [charCount, setCharCount] = React.useState(0);
+
+  const elRef = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(elRef.current, { rotation: 0 }, { rotation: 180, duration: 3 });
+  }, []);
 
   // const counters = document.querySelectorAll(".count");
   // const speed = 200;
@@ -32,7 +41,7 @@ function Home() {
               Espl<span>a</span>n<span>a</span>d
             </h1>
             <span className="subtitle">Förvaltning</span>
-            <p>
+            <p ref={elRef}>
               Din tjänsteleverantör inom teknisk förvaltning och
               fastighetsskötsel för din bostadsrättsförening, hyresfastighet,
               eller industrilokal.
