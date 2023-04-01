@@ -216,8 +216,8 @@ section {
 }
 
 @media screen and (min-width: 800px) {
-  .hero {
-    border: 1px solid #e0e0e0;
+  .services {
+    border-top: 1px solid #e0e0e0;
   }
   .container__cards {
     flex-direction: row;
