@@ -19,10 +19,10 @@ function Home() {
               eller industrilokal.
             </p>
             <div className="container__hero-btns">
-              <a className="hero-btn" href="">
+              <a className="hero-btn" href="/offer">
                 Be om offert
               </a>
-              <a className="hero-btn" href="">
+              <a className="hero-btn" href="#contact">
                 Kontakta oss
               </a>
             </div>
@@ -95,7 +95,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="contact-form">
+      <section className="contact-form" id="contact">
         <h2>
           Kontakta <span>Oss</span>
         </h2>
