@@ -103,22 +103,14 @@ section {
 .service-img-3 {
   background-image: url(./assets/tools.png);
 }
-/* .services-title {
-  background: rgb(16, 172, 244);
-  background: -webkit-linear-gradient(
-    150deg,
-    rgba(16, 172, 244, 1) 40%,
-    rgb(0, 0, 0) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
 /* Contact */
 .contact-form {
   margin-block: 3rem;
   text-align: center;
+}
+.contact-form span {
+  color: #10acf4;
 }
 .container__contact {
   display: flex;
@@ -178,10 +170,7 @@ section {
 
 @media screen and (min-width: 800px) {
   .hero {
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  .subtitle {
-    font-size: 4rem;
+    border: 1px solid #e0e0e0;
   }
   .container__cards {
     flex-direction: row;

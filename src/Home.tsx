@@ -97,7 +97,9 @@ function Home() {
       </section>
 
       <section className="contact-form">
-        <h2>Kontakt</h2>
+        <h2>
+          Kontakta <span>Oss</span>
+        </h2>
 
         <form action="submit">
           <div className="container__contact">
