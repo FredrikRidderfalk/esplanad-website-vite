@@ -1,0 +1,26 @@
+/* Offer section */
+.offer {
+  height: calc(100vh - 137px);
+  padding-top: 60px;
+  padding-inline: 1rem;
+}
+.offer-content {
+  width: 100%;
+}
+.offer-content p {
+  margin-top: 2rem;
+}
+.offer-content h2 {
+  text-align: center;
+}
+.container__offer-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+  .offer {
+    padding-inline: 2rem;
+  }
+}

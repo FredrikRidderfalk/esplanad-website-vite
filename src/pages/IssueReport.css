@@ -1,0 +1,27 @@
+/* Offer section */
+.issue-report {
+  height: calc(100vh - 137px);
+  padding-top: 60px;
+  padding-inline: 1rem;
+}
+.issue-report-content {
+  width: 100%;
+}
+.issue-report-content p {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.issue-report-content h2 {
+  text-align: center;
+}
+.container__issue-report-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+  .issue-report {
+    padding-inline: 2rem;
+  }
+}
