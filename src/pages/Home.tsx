@@ -99,7 +99,7 @@ function Home() {
         <h2>
           Kontakta <span>Oss</span>
         </h2>
-        <form action="submit">
+        <form action="https://formsubmit.co/ridderfalk@gmail.com" method="POST">
           <div className="container__contact">
             <div>
               <label htmlFor="name">
@@ -108,7 +108,9 @@ function Home() {
               <input
                 id="name"
                 type="text"
+                name="name"
                 placeholder="E.g. Anders Andersson"
+                required
               />
             </div>
 
@@ -118,9 +120,24 @@ function Home() {
               </label>
               <input
                 id="email"
-                type="text"
+                type="email"
+                name="email"
                 placeholder="E.g. andersson@gmail.com"
+                required
               />
+
+              {/* FormSubmit config inputs */}
+              <input
+                type="hidden"
+                name="_subject"
+                value="Meddelande från Esplanad hemsida"
+              ></input>
+              <input type="hidden" name="_captcha" value="false"></input>
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Tack för ert meddelande! Ni kommer att bli kontaktade av Esplanad inom kort."
+              ></input>
             </div>
 
             <div>
@@ -129,10 +146,12 @@ function Home() {
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows={8}
                 onChange={(e) => setCharCount(e.target.value.length)}
                 maxLength={1000}
                 placeholder="Skriv ditt meddelande här..."
+                required
               />
               {charCount < 1000 && (
                 <p className="input-error input-error-placeholder">.</p>
