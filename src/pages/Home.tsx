@@ -8,11 +8,187 @@ gsap.registerPlugin(ScrollTrigger);
 function Home() {
   const [charCount, setCharCount] = React.useState(0);
 
-  const elRef = useRef(null);
+  // GSAP
+  const heroRef = useRef(null);
+  const titleRef1 = useRef(null);
+  const titleRef2 = useRef(null);
+  const cardRef1 = useRef(null);
+  const cardRef2 = useRef(null);
+  const cardRef3 = useRef(null);
+  const iconRef1 = useRef(null);
+  const iconRef2 = useRef(null);
+  const serviceRef1 = useRef(null);
+  const serviceRef2 = useRef(null);
+  const serviceRef3 = useRef(null);
   useEffect(() => {
-    gsap.fromTo(elRef.current, { rotation: 0 }, { rotation: 180, duration: 3 });
+    const heroEl = heroRef.current;
+    const titleEl1 = titleRef1.current;
+    const titleEl2 = titleRef2.current;
+    const cardEl1 = cardRef1.current;
+    const cardEl2 = cardRef2.current;
+    const cardEl3 = cardRef3.current;
+    const iconEl1 = iconRef1.current;
+    const iconEl2 = iconRef2.current;
+    const serviceEl1 = serviceRef1.current;
+    const serviceEl2 = serviceRef2.current;
+    const serviceEl3 = serviceRef3.current;
+    gsap.fromTo(
+      heroEl,
+      {
+        x: "50%",
+        opacity: 0,
+      },
+      {
+        x: "",
+        opacity: 1,
+        duration: 3,
+        ease: "expo",
+      }
+    );
+    gsap.fromTo(
+      titleEl1,
+      {
+        y: "-100%",
+        opacity: 0,
+      },
+      {
+        delay: 0.4,
+        y: "",
+        opacity: 1,
+        duration: 3,
+        ease: "expo",
+      }
+    );
+    gsap.fromTo(
+      titleEl2,
+      {
+        y: "-100%",
+        opacity: 0,
+      },
+      {
+        delay: 0.8,
+        y: "",
+        opacity: 1,
+        duration: 3,
+        ease: "expo",
+      }
+    );
+    gsap.fromTo(
+      cardEl1,
+      {
+        opacity: 0,
+      },
+      {
+        delay: 2,
+        opacity: 1,
+        duration: 4,
+        ease: "expo",
+      }
+    );
+    gsap.fromTo(
+      cardEl2,
+      {
+        opacity: 0,
+      },
+      {
+        delay: 2.4,
+        opacity: 1,
+        duration: 4,
+        ease: "expo",
+      }
+    );
+    gsap.fromTo(
+      cardEl3,
+      {
+        opacity: 0,
+      },
+      {
+        delay: 2.8,
+        opacity: 1,
+        duration: 4,
+        ease: "expo",
+      }
+    );
+    gsap.fromTo(
+      serviceEl1,
+      {
+        x: "10%",
+        opacity: 0,
+      },
+      {
+        x: "",
+        opacity: 1,
+        duration: 4,
+        ease: "expo",
+        scrollTrigger: {
+          trigger: serviceEl1,
+        },
+      }
+    );
+    gsap.fromTo(
+      serviceEl2,
+      {
+        x: "-10%",
+        opacity: 0,
+      },
+      {
+        x: "",
+        opacity: 1,
+        duration: 4,
+        ease: "expo",
+        scrollTrigger: {
+          trigger: serviceEl2,
+        },
+      }
+    );
+    gsap.fromTo(
+      serviceEl3,
+      {
+        x: "10%",
+        opacity: 0,
+      },
+      {
+        x: "",
+        opacity: 1,
+        duration: 4,
+        ease: "expo",
+        scrollTrigger: {
+          trigger: serviceEl3,
+        },
+      }
+    );
+    gsap.fromTo(
+      iconEl1,
+      {
+        scale: 0.2,
+      },
+      {
+        scale: 1,
+        duration: 2,
+        ease: "elastic",
+        scrollTrigger: {
+          trigger: iconEl1,
+        },
+      }
+    );
+    gsap.fromTo(
+      iconEl2,
+      {
+        scale: 0.2,
+      },
+      {
+        delay: 0.4,
+        scale: 1,
+        duration: 2,
+        ease: "elastic",
+        scrollTrigger: {
+          trigger: iconEl2,
+        },
+      }
+    );
   }, []);
 
+  // Autocounter
   // const counters = document.querySelectorAll(".count");
   // const speed = 200;
 
@@ -36,12 +212,12 @@ function Home() {
     <div className="home">
       <section className="hero">
         <div className="container__hero-content">
-          <div className="hero-content">
+          <div ref={heroRef} className="hero-content">
             <h1>
-              Espl<span>a</span>n<span>a</span>d
+              Espl<span ref={titleRef1}>a</span>n<span ref={titleRef2}>a</span>d
             </h1>
             <span className="subtitle">Förvaltning</span>
-            <p ref={elRef}>
+            <p>
               Din tjänsteleverantör inom teknisk förvaltning och
               fastighetsskötsel för din bostadsrättsförening, hyresfastighet,
               eller industrilokal.
@@ -55,7 +231,7 @@ function Home() {
               </a>
             </div>
             <div className="container__cards">
-              <div className="stats-card">
+              <div ref={cardRef1} className="stats-card">
                 <b>80+</b>
                 {/* <b data-target="80" className="count">
                   0
@@ -63,7 +239,7 @@ function Home() {
                 <b>+</b> */}
                 <p>förvaltade hus</p>
               </div>
-              <div className="stats-card">
+              <div ref={cardRef2} className="stats-card">
                 <b>4500+</b>
                 {/* <b data-target="4500" className="count">
                   0
@@ -71,7 +247,7 @@ function Home() {
                 <b>+</b> */}
                 <p>hyresgäster</p>
               </div>
-              <div className="stats-card">
+              <div ref={cardRef3} className="stats-card">
                 <b>30 000+</b>
                 {/* <b data-target="30000" className="count">
                   0
@@ -90,7 +266,7 @@ function Home() {
           <div className="service-description">
             <div className="service-text">
               <h3>Fastighetsservice</h3>
-              <p>
+              <p ref={serviceRef1}>
                 Med kontinuerligt underhåll förbättras boende- och arbetsmiljön.
                 Vi gör löpande besiktningar för att hålla efter fastigheterna
                 invändigt och utvändigt. Snabba och kvalitativa reparationer är
@@ -105,7 +281,7 @@ function Home() {
           <div className="service-description">
             <div className="service-text">
               <h3>Ute- och innemiljö</h3>
-              <p>
+              <p ref={serviceRef2}>
                 En välskött utemiljö året om är viktig för att öka trivseln. Vi
                 håller gräset välklippt, gårdar och gångstigar sopade,
                 rabatterna snygga, häckar och buskar vältrimmade och tar även
@@ -121,7 +297,7 @@ function Home() {
           <div className="service-description">
             <div className="service-text">
               <h3>Boendeservice</h3>
-              <p>
+              <p ref={serviceRef3}>
                 En välskött utemiljö året om är viktig för att öka trivseln. Vi
                 håller gräset välklippt, gårdar och gångstigar sopade,
                 rabatterna snygga, häckar och buskar vältrimmade och tar även
@@ -208,14 +384,24 @@ function Home() {
 
         <div className="container__contact-info">
           <div className="contact-item">
-            <img className="icon" src="src/assets/phone-icon.png" alt="" />
+            <img
+              ref={iconRef1}
+              className="icon"
+              src="src/assets/phone-icon.png"
+              alt=""
+            />
             <div className="contact-item__info">
               <b>Telefon:</b>
               <p>031-7882800</p>
             </div>
           </div>
           <div className="contact-item">
-            <img className="icon" src="src/assets/email-icon.png" alt="" />
+            <img
+              ref={iconRef2}
+              className="icon"
+              src="src/assets/email-icon.png"
+              alt=""
+            />
             <div className="contact-item__info">
               <b>E-post:</b>
               <a className="email-link" href="roger@esplanad.nu">
