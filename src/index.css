@@ -49,6 +49,17 @@ textarea {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 6px rgba(16, 172, 244, 0.5);
+}
+
+:focus-visible,
+:focus {
+  outline-color: #10acf4;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -61,11 +72,15 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #27bbff;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline-offset: 4px;
+  outline: 4px auto #10acf4;
+}
+button:active {
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {
