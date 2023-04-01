@@ -16,10 +16,10 @@ function Footer() {
           <a href="/gdpr" className="footer-link">
             GDPR
           </a>
-          <a href="" className="footer-link">
+          <a href="/cookies" className="footer-link">
             Cookies
           </a>
-          <a href="" className="footer-link">
+          <a href="/career" className="footer-link">
             Jobba hos oss
           </a>
         </div>

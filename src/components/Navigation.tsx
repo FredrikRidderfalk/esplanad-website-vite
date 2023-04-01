@@ -14,10 +14,10 @@ const Navigation = () => {
           <a className="link" href="/">
             Hem
           </a>
-          <a className="link" href="/gdpr">
+          <a className="link" href="/offer">
             Offert
           </a>
-          <a className="link" href="/gdpr">
+          <a className="link" href="/issue-report">
             Felanmälan
           </a>
         </div>
