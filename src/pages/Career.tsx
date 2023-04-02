@@ -1,11 +1,12 @@
 import "./Career.css";
+import careerImg from "/src/assets/career.jpg";
 
 function Career() {
   return (
     <div className="career">
       <div className="container__career-content">
         <div className="career-content">
-          <img src="../../public/assets/career.jpg" alt="" />
+          <img src={careerImg} alt="" />
           <h2>Lediga tjänster</h2>
           <p>
             Vi är alltid intresserade av att komma i kontakt med ambitiösa och

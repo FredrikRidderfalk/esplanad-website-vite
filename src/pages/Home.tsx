@@ -1,6 +1,8 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 import "./Home.css";
+import phoneIcon from "/src/assets/phone-icon.png";
+import emailIcon from "/src/assets/email-icon.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -384,24 +386,14 @@ function Home() {
 
         <div className="container__contact-info">
           <div className="contact-item">
-            <img
-              ref={iconRef1}
-              className="icon"
-              src="../../public/assets/phone-icon.png"
-              alt=""
-            />
+            <img ref={iconRef1} className="icon" src={phoneIcon} alt="" />
             <div className="contact-item__info">
               <b>Telefon:</b>
               <p>031-7882800</p>
             </div>
           </div>
           <div className="contact-item">
-            <img
-              ref={iconRef2}
-              className="icon"
-              src="../../public/assets/email-icon.png"
-              alt=""
-            />
+            <img ref={iconRef2} className="icon" src={emailIcon} alt="" />
             <div className="contact-item__info">
               <b>E-post:</b>
               <a className="email-link" href="roger@esplanad.nu">
