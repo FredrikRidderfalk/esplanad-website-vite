@@ -5,7 +5,7 @@ function Career() {
     <div className="career">
       <div className="container__career-content">
         <div className="career-content">
-          <img src="src/assets/career.jpg" alt="" />
+          <img src="../../public/assets/career.jpg" alt="" />
           <h2>Lediga tjänster</h2>
           <p>
             Vi är alltid intresserade av att komma i kontakt med ambitiösa och

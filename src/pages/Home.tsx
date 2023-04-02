@@ -387,7 +387,7 @@ function Home() {
             <img
               ref={iconRef1}
               className="icon"
-              src="src/assets/phone-icon.png"
+              src="../../public/assets/phone-icon.png"
               alt=""
             />
             <div className="contact-item__info">
@@ -399,7 +399,7 @@ function Home() {
             <img
               ref={iconRef2}
               className="icon"
-              src="src/assets/email-icon.png"
+              src="../../public/assets/email-icon.png"
               alt=""
             />
             <div className="contact-item__info">
