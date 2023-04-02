@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import "./Footer.css";
 
@@ -13,15 +14,15 @@ function Footer() {
           </div>
         </div>
         <div className="container__footer-links">
-          <a href="/gdpr" className="footer-link">
+          <Link to="/gdpr" className="footer-link">
             GDPR
-          </a>
-          <a href="/cookies" className="footer-link">
+          </Link>
+          <Link to="/cookies" className="footer-link">
             Cookies
-          </a>
-          <a href="/career" className="footer-link">
+          </Link>
+          <Link to="/career" className="footer-link">
             Jobba hos oss
-          </a>
+          </Link>
         </div>
       </div>
     </div>

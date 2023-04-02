@@ -1,25 +1,26 @@
 import viteLogo from "/vite.svg";
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <nav className="navbar">
       <div className="container__navbar-content">
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <img src={viteLogo} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="container__links">
-          <a className="link" href="/">
+          <Link className="link" to="/">
             Hem
-          </a>
-          <a className="link" href="/offer">
+          </Link>
+          <Link className="link" to="/offer">
             Offert
-          </a>
-          <a className="link" href="/issue-report">
+          </Link>
+          <Link className="link" to="/issue-report">
             Felanmälan
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
