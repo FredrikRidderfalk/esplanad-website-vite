@@ -105,7 +105,7 @@ function Home() {
       {
         delay: 2.8,
         opacity: 1,
-        duration: 4,
+        duration: 2,
         ease: "expo",
       }
     );
@@ -118,7 +118,7 @@ function Home() {
       {
         x: "",
         opacity: 1,
-        duration: 4,
+        duration: 2,
         ease: "expo",
         scrollTrigger: {
           trigger: serviceEl1,
@@ -134,7 +134,7 @@ function Home() {
       {
         x: "",
         opacity: 1,
-        duration: 4,
+        duration: 2,
         ease: "expo",
         scrollTrigger: {
           trigger: serviceEl2,
